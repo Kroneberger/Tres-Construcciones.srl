@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRES CONSTRUCCIONES | Viviendas y diseño</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">3P</span><span>TRES CONSTRUCCIONES<small>DISEÑÁ · CONSTRUÍ · HABITÁ</small></span></a>
+    <nav><a href="#inicio">Inicio</a><a href="#modelos">Viviendas</a><a href="#galeria">Portfolio</a><a href="#personalizar">Materiales</a></nav>
+    <div class="school-mark"><img src="imagenes/logo-eestn1.png" alt="Logo E.E.S.T. Nº 1 Tres Chañares"><span>E.E.S.T. Nº 1<br><strong>Tres Chañares</strong></span></div>
+  </header>
+
+  <main>
+    <section class="home-slider" id="inicio" aria-label="Galería de proyectos destacados">
+      <div class="slides" aria-live="polite">
+        <article class="slide active" data-title="Arquitectura para vivir" data-description="Diseñamos espacios que combinan funcionalidad, confort y estilo." style="--slide-image: url('imagenes/exterior-rotonda.png')">
+          <img src="imagenes/exterior-rotonda.png" alt="Render exterior de vivienda contemporánea con jardín" fetchpriority="high">
+        </article>
+        <article class="slide" data-title="Interiores con identidad" data-description="Materiales, luz natural y detalles pensados para cada hogar." style="--slide-image: url('imagenes/interior-estar-cocina.png')">
+          <img src="imagenes/interior-estar-cocina.png" alt="Render interior de estar comedor integrado con cocina" loading="lazy">
+        </article>
+        <article class="slide" data-title="Cada detalle importa" data-description="Visualizamos ideas y las convertimos en espacios concretos." style="--slide-image: url('imagenes/interior-estar.png')">
+          <img src="imagenes/interior-estar.png" alt="Render de interior con techo de madera y cocina" loading="lazy">
+        </article>
+        <article class="slide" data-title="Diseño y materialidad" data-description="Exploramos soluciones y terminaciones para cada proyecto." style="--slide-image: url('imagenes/cocina-profesional.png')">
+          <img src="imagenes/cocina-profesional.png" alt="Render de cocina contemporánea con isla central" loading="lazy">
+        </article>
+        <article class="slide" data-title="También diseñamos experiencias" data-description="Modelado, visualización e iluminación para distintos espacios." style="--slide-image: url('imagenes/puesta-iluminacion.png')">
+          <img src="imagenes/puesta-iluminacion.png" alt="Render de diseño de iluminación y puesta en escena" loading="lazy">
+        </article>
+      </div>
+      <div class="slider-shade"></div>
+      <div class="slider-content">
+        <p class="eyebrow">TRES CONSTRUCCIONES · PROYECTO Y CONSTRUCCIÓN</p>
+        <h1 id="slideTitle">Arquitectura para <em>vivir.</em></h1>
+        <p id="slideDescription">Diseñamos espacios que combinan funcionalidad, confort y estilo.</p>
+        <a class="primary-link" href="#modelos">Explorar viviendas <span>↘</span></a>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-arrow" id="prevSlide" aria-label="Render anterior">←</button>
+        <div class="slider-dots" role="group" aria-label="Elegir render">
+          <button class="slider-dot active" data-slide="0" aria-label="Mostrar render 1" aria-pressed="true"></button>
+          <button class="slider-dot" data-slide="1" aria-label="Mostrar render 2" aria-pressed="false"></button>
+          <button class="slider-dot" data-slide="2" aria-label="Mostrar render 3" aria-pressed="false"></button>
+          <button class="slider-dot" data-slide="3" aria-label="Mostrar render 4" aria-pressed="false"></button>
+          <button class="slider-dot" data-slide="4" aria-label="Mostrar render 5" aria-pressed="false"></button>
+        </div>
+        <button class="slider-arrow" id="nextSlide" aria-label="Render siguiente">→</button>
+        <span class="slider-counter" id="slideCounter">01 / 05</span>
+      </div>
+      <span class="slider-scroll-note">DESLIZÁ PARA DESCUBRIR <span>↓</span></span>
+    </section>
+
+    <section class="section" id="modelos">
+      <div class="section-heading">
+        <div><p class="eyebrow">PASO 01</p><h2>Elegí tu vivienda</h2></div>
+        <p>Seleccioná la distribución que mejor se adapte a tus necesidades.</p>
+      </div>
+      <div class="model-grid">
+        <button class="model-card selected" data-model="casa1" aria-pressed="true">
+          <span class="model-number">01</span><span class="model-plan plan-one"><i></i><i></i><i></i><i></i></span>
+          <strong>Vivienda esencial</strong><span class="model-details">2 habitaciones · 1 baño</span><span class="choose-label">Seleccionada ✓</span>
+        </button>
+        <button class="model-card" data-model="casa2" aria-pressed="false">
+          <span class="model-number">02</span><span class="model-plan plan-two"><i></i><i></i><i></i><i></i><i></i></span>
+          <strong>Vivienda flexible</strong><span class="model-details">2 habitaciones · 2 baños</span><span class="choose-label">Elegir vivienda ↗</span>
+        </button>
+        <button class="model-card" data-model="casa3" aria-pressed="false">
+          <span class="model-number">03</span><span class="model-plan plan-three"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <strong>Vivienda familiar</strong><span class="model-details">3 habitaciones · 2 baños</span><span class="choose-label">Elegir vivienda ↗</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="section portfolio-section" id="galeria">
+      <div class="section-heading">
+        <div><p class="eyebrow">NUESTRO TRABAJO</p><h2>Ideas que toman forma</h2></div>
+        <p>Una muestra de renders, espacios interiores, exteriores y propuestas de visualización desarrolladas en nuestros proyectos.</p>
+      </div>
+      <div class="portfolio-grid">
+        <figure class="portfolio-card portfolio-large"><img src="imagenes/exterior-rotonda.png" alt="Render exterior de vivienda contemporánea" loading="lazy"><figcaption><span>01 / EXTERIOR</span><strong>Vivienda contemporánea</strong></figcaption></figure>
+        <figure class="portfolio-card"><img src="imagenes/interior-estar-cocina.png" alt="Render de estar y cocina integrados" loading="lazy"><figcaption><span>02 / INTERIOR</span><strong>Estar y cocina</strong></figcaption></figure>
+        <figure class="portfolio-card"><img src="imagenes/interior-estar.png" alt="Render interior con mobiliario de madera" loading="lazy"><figcaption><span>03 / INTERIOR</span><strong>Espacios cotidianos</strong></figcaption></figure>
+        <figure class="portfolio-card"><img src="imagenes/cocina-profesional.png" alt="Render de cocina con isla central" loading="lazy"><figcaption><span>04 / MATERIALIDAD</span><strong>Diseño de cocina</strong></figcaption></figure>
+        <figure class="portfolio-card"><img src="imagenes/puesta-iluminacion.png" alt="Render de diseño lumínico y escenario" loading="lazy"><figcaption><span>05 / VISUALIZACIÓN</span><strong>Iluminación y puesta en escena</strong></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section custom-section" id="personalizar">
+      <div class="section-heading">
+        <div><p class="eyebrow">PASO 02</p><h2>Personalizá los materiales</h2></div>
+        <p>Probá acabados diferentes. La vista previa se actualiza con tus elecciones.</p>
+      </div>
+      <div class="config-layout">
+        <div class="controls-panel">
+          <div class="room-tabs" role="tablist" aria-label="Ambiente">
+            <button class="room-tab active" data-room="cocina" role="tab" aria-selected="true">01 · Cocina</button>
+            <button class="room-tab" data-room="bano" role="tab" aria-selected="false">02 · Baño</button>
+          </div>
+
+          <div class="material-group">
+            <label for="floorMaterial">Piso</label>
+            <select id="floorMaterial">
+              <option value="cemento">Porcelanato gris</option>
+              <option value="madera">Símil madera</option>
+              <option value="arena">Porcelanato arena</option>
+              <option value="damero">Cerámica damero</option>
+            </select>
+          </div>
+          <div class="material-group">
+            <label for="wallMaterial">Pared</label>
+            <select id="wallMaterial">
+              <option value="blanco">Blanco cálido</option>
+              <option value="verde">Verde salvia</option>
+              <option value="arena">Arena</option>
+              <option value="azul">Azul grisáceo</option>
+            </select>
+          </div>
+          <div class="material-group" id="kitchenExtra">
+            <label for="counterMaterial">Mesada</label>
+            <select id="counterMaterial">
+              <option value="clara">Cuarzo blanco</option>
+              <option value="negra">Granito negro</option>
+              <option value="madera">Madera natural</option>
+            </select>
+          </div>
+          <div class="material-group" id="bathExtra" hidden>
+            <label for="vanityMaterial">Mueble de baño</label>
+            <select id="vanityMaterial">
+              <option value="madera">Madera natural</option>
+              <option value="blanco">Blanco mate</option>
+              <option value="negro">Negro</option>
+            </select>
+          </div>
+          <div class="material-group">
+            <label>Paleta de color</label>
+            <div class="swatches" aria-label="Paleta de pared">
+              <button class="swatch swatch-white active" data-wall="blanco" aria-label="Blanco cálido" title="Blanco cálido"></button>
+              <button class="swatch swatch-green" data-wall="verde" aria-label="Verde salvia" title="Verde salvia"></button>
+              <button class="swatch swatch-sand" data-wall="arena" aria-label="Arena" title="Arena"></button>
+              <button class="swatch swatch-blue" data-wall="azul" aria-label="Azul grisáceo" title="Azul grisáceo"></button>
+            </div>
+          </div>
+          <p class="helper">Vista basada en renders del proyecto. Las opciones actualizan la propuesta visual de terminaciones; para modificar únicamente cada superficie con precisión se necesitan renders o máscaras por material.</p>
+        </div>
+
+        <div class="preview-panel">
+          <div class="preview-top"><div><span class="preview-kicker">VISTA PREVIA</span><h3 id="previewTitle">Cocina · Vivienda esencial</h3></div><span class="preview-badge">EN VIVO</span></div>
+          <div class="room-preview kitchen" id="roomPreview" aria-label="Vista previa del ambiente con render de referencia"><img class="render-preview-image" id="renderPreviewImage" src="imagenes/cocina-profesional.png" alt="Render de cocina de referencia"><div class="material-tint" id="materialTint"></div>
+            <div class="ceiling"></div><div class="back-wall"></div><div class="side-wall"></div>
+            <div class="window"><span></span></div>
+            <div class="upper-cabinets"><i></i><i></i><i></i></div>
+            <div class="backsplash"></div>
+            <div class="counter"></div>
+            <div class="lower-cabinets"><i></i><i></i><i></i></div>
+            <div class="appliance"></div>
+            <div class="floor"></div>
+            <div class="preview-label">PROPUESTA DE ACABADOS <span id="materialSummary">Gris · Blanco cálido · Cuarzo blanco</span></div>
+          </div>
+          <div class="preview-footer"><span><i class="live-dot"></i> Vista conceptual, no constructiva</span><button id="resetButton" class="text-button">Restablecer opciones ↺</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-note">
+      <span class="final-icon">✳</span><div><p class="eyebrow">TU PROYECTO, TU ELECCIÓN</p><h2>Los detalles hacen la diferencia.</h2><p>Elegí una distribución y explorá alternativas de terminación. Cada proyecto combina diseño, documentación y visualización arquitectónica.</p></div>
+    </section>
+  </main>
+  <footer><div class="footer-brand"><img src="imagenes/logo-eestn1.png" alt="Logo E.E.S.T. Nº 1 Tres Chañares"><div><strong>TRES PROPIEDADES</strong><span>PROYECTO · DISEÑO · CONSTRUCCIÓN</span></div></div><span class="footer-school">Proyecto desarrollado en el marco de Emprendimientos Productivos<br><strong>E.E.S.T. Nº 1 Tres Chañares</strong></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
